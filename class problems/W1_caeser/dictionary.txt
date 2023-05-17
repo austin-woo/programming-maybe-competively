@@ -1,0 +1,8 @@
+6 1
+cat
+dog
+elephant
+frog
+grape
+horse
+gfro
