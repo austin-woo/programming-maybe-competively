@@ -1,4 +1,5 @@
-
+from bitarray import bitarray
+#bit string
 BITS_PER_WORD = 32  
 BITS_PER_PHONE_NUM = 7 
 MAX_PHONE_NUM = 9999999 

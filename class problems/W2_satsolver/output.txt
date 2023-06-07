@@ -1,0 +1,4 @@
+Satisfiable
+Variable 1: False
+Variable 2: False
+Variable 3: True
