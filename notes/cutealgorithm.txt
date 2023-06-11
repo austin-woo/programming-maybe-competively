@@ -1,0 +1,38 @@
+i have a list of numbers
+these numbers are considered votes 
+i want function that if there is a simple majority of votes, it will return what that is
+ex: a list of 1,3,4 is 1 vote of 1, 1 vote of 3, 1 vote of 4
+
+use a hash
+basically have the key as the candidate and the value as how many times seen 
+time complexity: o(n)
+
+
+space complexity: o(n) 
+
+the really cute algorithm to have o(1) 
+two/three variables:
+you store current best candidate and a count.
+start with candidate being 0, and count being 0. 
+as you iterate through the list, if you count is 0 then you set your candidate to the current value and increment your count. if the current value equals the candidate, you increment the count otherwise you decrement the count. 
+this is called  boyer moore majority vote algorithm 
+we decrement because 
+m will at some time hold the wrong value you can imagine if im considering current candidate m, evreyit i see m it goes up, anytime i see something that is not m the vote goes down. 
+if list is entirely 1 value, then at the end m will be that value.
+if the list is mostly 1 value except replace a small number of entry, but can still reason that m is still that value. 
+
+the weakness of this algorithm: 
+when there is no majority it will still say one of the sequence 
+you can pass over it one more time. 
+
+mechanical sympathy: IMPORTANT  
+
+
+MODERN SAT has a lot of variables
+being np complete is not a statement of "is it worth trying " it is "in the worst case, you're screwed" you cant promise a algorithm that always works, but doesnt' mean that it is not worth to solve
+
+SAT solvers from 20 years ago vs now: 
+did the test: took bunch of SAT solvers that wwere writeen in 90's, ran them on NEW computers versus old code on NEW computers
+new code on old computesr work
+means that technoclaocial advances are so strong they outweigh 
+
